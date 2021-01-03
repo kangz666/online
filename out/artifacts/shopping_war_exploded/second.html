@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册</title>
+    <style>
+        *{
+            margin: 0px;
+            background-color: cornsilk;
+        }
+        .content {
+            background-color: cornsilk;
+        }
+
+        .text_login {
+            font-size: 25px;
+            text-align: center;
+        }
+
+       
+        .span1 {
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text_box {
+            margin: 10px;
+            font-size: 26px;
+        }
+
+        .text_box2 {
+            border-bottom: 2px solid rgb(5, 56, 51);
+            height: 25px;
+            width: 50%;
+            background-color: cornsilk;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+        }
+
+        .text_box2:focus {
+            border-bottom: 2px solid rgb(5, 56, 51);
+            background-color: cornsilk;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+        }
+
+        .button_box {
+            height: 36px;
+            width: 76px;
+            border-radius: 15px;
+        }
+
+        .button_box:hover {
+            background-color: darkcyan;
+        }
+    </style>
+    <script src="secondjs.js"></script>
+</head>
+
+<body>
+    <div class="content">
+        <div class="text_login">注册</div>
+        <div class="login_1">
+            <form action="RegisterServlet" onsubmit="return validate();" method="post">
+                <p style="font-size: 20px;color: black;">熟悉的账号来注册</p>
+                <div class="span1">
+                    <label class="text_box">账号：</label>
+                    <input type="text" class="text_box2" placeholder="请输入账号..." name="number" id="number">
+                </div>
+                <div class="span1">
+                    <label class="text_box">密码：</label>
+                    <input class="text_box2" type="text" placeholder="请输入密码..." name="password" id="password">
+                </div>
+                <div class="span1">
+                    <label class="text_box">姓名：</label>
+                    <input type="text" class="text_box2" placeholder="请输入姓名..." name="name" id="name">
+                </div>
+                <div class="span1">
+                    <label class="text_box">身份证：</label>
+                    <input class="text_box2" type="text" placeholder="请输入身份证..." name="id" id="id">
+                </div>
+    
+            <div class="span1">
+                <label class="text_box">联系方式：</label>
+                <input type="text" class="text_box2" placeholder="请输入联系方式..." name="phone" id="phone">
+            </div>
+            <div class="span1">
+                <label class="text_box">收货地址：</label>
+                <input class="text_box2" type="text" placeholder="请输入地址..." name="address" id="address">
+            </div>
+            <div class="span1">
+                <label class="text_box">email：</label>
+                <input type="text" class="text_box2" placeholder="请输入email..." name="email" id="email">
+            </div>
+            <div class="span1">
+                <label class="text_box">QQ：</label>
+                <input class="text_box2" type="text" placeholder="请输入QQ..." name="qq" id="qq">
+            </div>
+            <div class="span1">
+                <input type="submit" name="submit" class="button_box" value="注     册">
+            </div>
+            </form>
+        </div>
+
+</body>
+
+</html>

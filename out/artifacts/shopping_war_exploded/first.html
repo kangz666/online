@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>生活家居购物中心</title>
+    <link rel="stylesheet" href="css/firstcss.css">
+    <script src="js/fristjs.js"></script>
+</head>
+
+<body>
+<script>
+    function update() {
+        var user_number = prompt("输入你的会员账号。");
+        if(user_number!=null){
+            var user_password = prompt("输入你修改的密码");
+            if(user_password!=null){
+                window.location.href = "LoginServlet?method=update&user_number=" +user_number + "&user_password=" + user_password;3
+            }
+        }
+
+    }
+</script>
+    <div class="header">
+        <div class="logo">
+            
+            <img src="picture/家.png">
+            <a href="">生活购物</a>
+            
+            
+            <div class="login">
+                <ul>
+                    <li><a href="managerfirst.html">管理员登录</a> </li>
+                    <li>  <a href="second.html">注册</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div class="content">
+        <div class="text_login">登录</div>
+        <div class="login_1">
+            <form action="LoginServlet?method=login" onsubmit="return validate();" method="post">
+                <p style="font-size: 20px;color: black;">使用注册的账号登录</p>
+                <div class="span1">
+                    <label class="text_box">账号：</label>
+                    <input type="text" class="text_box2" placeholder="请输入账号..." name="number" id="number">
+                </div>
+                <div class="span1">
+                    <label class="text_box" >密码：</label>
+                    <input class="text_box2" type="password" placeholder="请输入密码..." name="password" id="password">
+                </div>
+
+                <div class="span1">
+                    <input type="submit" name="submit" class="button_box" value="登     录">
+                    <br />
+                    <a style="cursor: pointer; margin-top: 30px" onclick="update()">忘记密码？</a>
+                </div>
+            </form>
+        </div>
+        
+        <div class="login_2">
+            <img src="picture/礼物-2.png" alt="请登录">
+        </div>
+        
+    </div>
+
+    <div class="footer_top">
+
+        <div class="footer_top_pic">
+            <img src="https://m.media-amazon.com/images/G/28/AS/AGS/images/index/img-bottom.png" alt="">
+        </div>
+        <div class="footer_top-content">
+            <div style="text-align: center;">
+                <h4>立即登录</h4>
+            </div>
+            <div style="text-align: center;">
+                <h5>助您成为优质用户</h5>
+            </div>
+            <a href="second.html">
+                <div class="regis">立即注册</div>
+            </a>
+        </div>
+    </div>
+    <div style="clear: both;"></div>
+    <hr />
+    <div style="background-color: #232F3E; color: white; ">
+        <div>
+            <div style="display: inline-block; width: 30%;">
+                <div style="text-align: center;margin-bottom: 70px;">
+                    关于我们
+                </div>
+                <div style="margin: 10px 120px;">
+                   
+                   <p style="text-align: center;">发展出口业务，<br></p> 
+                   <p style="text-align: center;">拓展全球市场，<br></p>
+                   <p style="text-align: center;"> 打造国际品牌。<br></p>
+                   <p style="text-align: center;">帮助买家提供购买生活起居，<br></p>
+                    
+                   
+                    
+                </div>
+            </div>
+            <div style="display: inline-block;  width: 20%;">
+                <div style="text-align: center;margin-bottom: 80px;"> 联系我们</div>
+                <div style="text-align: center;margin-bottom: 30px;">联系买家支持 </div>
+                <div style="text-align: center;">区域跨境电商园</div>
+
+            </div>
+            <div style="display: inline-block;  width: 25%;">
+                <div style="text-align: center;margin-bottom: 30px;">关住LIVES微信</div>
+                <div style="text-align: center;"><img
+                        src="picture/二维码lives.png"
+                        width="120px" ; height="120px" alt="微信号"></div>
+            </div>
+            <div style="display: inline-block;  width: 20%;">
+                <div style="text-align: center;margin-bottom: 30px;">下载官方APP</div>
+                <div style="text-align: center;"><img
+                        src="picture/二维码lives.png" alt="APP"
+                        width="120px" ; height="120px"></div>
+            </div>
+
+        </div>
+        <hr />
+        <!-- 最底部 -->
+        <div>
+            <div><img
+                    src="picture/交货-2.png"
+                    alt="图标" width="110px" ;height="50px"></div>
+            <div style="text-align: end;">
+                <p>© 2020, lives Services China. All Rights Reserved. An lives Company</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

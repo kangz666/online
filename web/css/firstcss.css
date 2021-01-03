@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+.header{
+    background-color: cadetblue;
+}
+.logo{
+    margin: 0px 50px;
+    position: relative;
+}
+.logo>a{
+    cursor: pointer;
+    text-decoration: none;
+    position: absolute;
+    top: 15px;
+    padding: 0px 10px;
+}
+.logo>a::after{
+    content: "欢迎光临,小店";
+    margin: 0px;
+}
+.login{
+    float: right;
+}
+.login>ul>li{
+    cursor: pointer;
+    list-style-type: none;
+    float: left;
+    margin: 5px 5px;
+    padding: 5px; 
+}
+
+.content{
+    height: 500px;
+    background-color: cornsilk;
+}
+
+.text_login{
+    font-size: 25px;
+    text-align: center;
+}
+.login_1{
+    width: 50%;
+    float: left;
+    
+}
+.login_2{
+    text-align: center;
+    margin-top: 100px;
+}
+.span1{
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+}
+.text_box{
+    margin: 10px;
+    font-size: 26px;
+}
+.text_box2{
+    border-bottom: 2px solid rgb(5, 56, 51);
+    height: 25px;
+    width: 50%;
+    background-color: cornsilk; 
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+}
+.text_box2:focus{
+    border-bottom: 2px solid rgb(5, 56, 51);
+    background-color: cornsilk; 
+   
+}
+
+.button_box{
+    height: 36px;
+    width: 76px;
+    border-radius: 15px;
+}
+
+.button_box:hover{
+    background-color: darkcyan;
+}
+
+.regis {
+    margin: auto;
+    background-color: coral;
+    padding: 10px 15px;
+    border-radius: 15px;
+    width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+.five_top {
+    background-color: rgb(225, 242, 243);
+    margin: 0px;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.five_top_concent {
+    display: inline-block;
+    margin: 0px 60px;
+    padding: 10px;
+}
+
+.five_top_concent a:hover {
+    color: gray;
+}
+
+.footer_top {
+    margin: 20px;
+
+}
+
+.footer_top_pic {
+    float: right;
+}

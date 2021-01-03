@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>添加商品信息</title>
+    <style>
+        *{
+            margin: 0px;
+            background-color: cornsilk;
+        }
+        .content {
+            background-color: cornsilk;
+        }
+
+        .text_login {
+            font-size: 25px;
+            text-align: center;
+        }
+
+       
+        .span1 {
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .text_box {
+            margin: 10px;
+            font-size: 20px;
+        }
+
+        .text_box2 {
+            border-bottom: 2px solid rgb(5, 56, 51);
+            height: 25px;
+            background-color: cornsilk;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+        }
+
+        .text_box2:focus {
+            border-bottom: 2px solid rgb(5, 56, 51);
+            background-color: cornsilk;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+        }
+
+        .button_box {
+            height: 36px;
+            width: 76px;
+            border-radius: 15px;
+        }
+
+        .button_box:hover {
+            background-color: darkcyan;
+        }
+
+        </style>
+        
+</head>
+
+<body>
+   
+    <h3 style="text-align: center;margin: 25px;">添加商品信息</h3>
+    <!-- 商品信息表（商品编号，商品名称，类别编号，数量，单价，图片，描述） -->
+    <form action="ManagerAddServlet" enctype="multipart/form-data" method="post">
+        <div style="margin-left: 431px;">
+            <table border="0" >
+                <tr>
+                    <td><div class="span1">
+                        <label class="text_box">商品编号：</label>
+                        <input type="text" class="text_box2" name="informatian_number" placeholder="请输入商品编号...">
+                    </div>
+                    <div class="span1">
+                        <label class="text_box">商品名称：</label>
+                        <input class="text_box2" type="text" name="informatian_name" placeholder="请输入商品名称...">
+                    </div>
+                    <div class="span1">
+                        <label class="text_box">类别编号：</label>
+                        <select style="width: 190px;height: 20px;" name="category_number" id="">
+                            <option value="0">请选择</option>
+                            <option value="A11">手机</option>
+                            <option value="A22">电脑</option>
+                            <option value="A33">平板</option>
+                            <option value="A44">生活用品</option>
+                        </select>
+                    </div>
+                    <div class="span1">
+                        <label class="text_box">数量：</label>
+                        <input class="text_box2" type="text" name="sum" placeholder="请输入数量...">
+                    </div>
+        
+                    <div class="span1">
+                        <label class="text_box">单价：</label>
+                        <input type="text" class="text_box2" name="price" placeholder="请输入价格...">
+                    </div>
+        
+                    <div class="span1">
+                        <label class="text_box">描述：</label>
+                        <input type="text" class="text_box2" name="text" placeholder="请输入描述...">
+                    </div>
+                </td>
+                    <td>
+                        <div class="span1">
+                            <label class="text_box">图片：</label>
+
+                            <input type="text" name="username" value="">
+                            <input type="file" name="picture" value="上传图片">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <script>
+            function return_to() {
+                var b = confirm("确认取消");
+                if(b){
+                    window.location.href="Manager.jsp";
+                }
+            }
+        </script>
+      
+        <div class="span1" style="text-align: center;">
+            <input style="margin-right: 50px;" type="submit" name="submit" class="button_box" value="保     存">
+            <input type="reset" onclick="return_to()" class="button_box" value="取     消">
+        </div>
+    </form>
+</body>
+
+</html>

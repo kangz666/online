@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="shopping:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/shopping_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="shopping/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="shopping" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="lib" />
+          <element id="library" level="project" name="mssql-jdbc-6.4.0.jre8" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
